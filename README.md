@@ -37,7 +37,7 @@ You also need to change the value of `STATEBUCKET` in the Makefile to match that
 
 Upon completion, terraform will output the DNS name of Jenkins, e.g.:
 ```
-jenkins_public_dns = [ ec2-54-235-229-108.compute-1.amazonaws.com ]
+jenkins_public_dns = [ ec2-12-34-56-78.compute-1.amazonaws.com ]
 ```
 You can then reach Jenkins via your browser at `http://ec2-54-235-229-108.compute-1.amazonaws.com`.
 
@@ -51,4 +51,4 @@ To grant SSH access to Terraform, place the instance's PEM file in this project'
 
 The AMI on which Jenkins is run has [Weave Scope](https://www.weave.works/products/weave-scope/) pre-installed. Scope is a Docker monitoring, visualisation and management tool from Weaveworks.
 
-The Scope UI can be reached at the URL of the Jenkins instance on port 4040, e.g. `http://ec2-54-235-229-108.compute-1.amazonaws.com:4040`.
+The Scope UI can be reached at the URL of the Jenkins instance on port 4040, e.g. `http://ec2-12-34-56-78.compute-1.amazonaws.com:4040`.

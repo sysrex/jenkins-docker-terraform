@@ -94,7 +94,6 @@ resource "aws_instance" "jenkins" {
   }
 
   # Add backup task to crontab
-  # Add backup task to crontab
   provisioner "file" {
     connection {
       type        = "ssh"
